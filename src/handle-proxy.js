@@ -1,4 +1,4 @@
-const socks = require('socks').client
+const socks = require('socks').SocksClient
 const lookup = require('./lookup')
 
 const handleProxy = (addr, options) => {
