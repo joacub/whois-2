@@ -6,8 +6,9 @@ const handleProxy = (addr, options) => {
     let info
     try {
       info = await socks.createConnection({
+        command: 'connect',
         proxy: options.proxy,
-        target: {
+        destination: {
           host: options.server.host,
           port: options.server.port
         },
